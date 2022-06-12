@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+    jpa:
+        database: sqlserver
+        show-sql: true 
+    datasource:
+        url: jdbc:sqlserver://srvquant-desa-leasing.database.windows.net;database=dalton_leasing
+        username: administrador@srvquant-desa-leasing
+        password: C0ntr4s3ñ4P3rr0n4   
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        dialect: org.hibernate.dialect.SQLServer2012Dialect        
+name: qa
+environment: testing
+enabled: false
+hosts:
+  python: http://40.84.188.45:8083
+  operation1Path: /operacion1
+  operation2Path: /operacion2

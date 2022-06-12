@@ -1,0 +1,13 @@
+server:
+  port: 1010
+
+spring:
+    datasource:
+        url: jdbc:sqlserver://srvquant-desa-leasing.database.windows.net;database=dalton_leasing
+        username: administrador@srvquant-desa-leasing
+        password: C0ntr4s3ñ4P3rr0n4   
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+name: prod
+environment: production
+enabled: true
